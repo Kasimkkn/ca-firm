@@ -55,9 +55,9 @@ const page = () => {
         </section>
         <section className='flex flex-col'>
           <div className='flex items-center whitespace-nowrap text-[26px] md:text-6xl lg:text-[90px] uppercase'>
-            <h3>'92 Accounting Since</h3>
-            <h3>'92 Accounting Since</h3>
-            <h3>'92 Accounting Since</h3>
+            <h3>&apos;92 Accounting Since</h3>
+            <h3>&apos;92 Accounting Since</h3>
+            <h3>&apos;92 Accounting Since</h3>
           </div>
           <div className='flex items-center whitespace-nowrap text-[26px] md:text-6xl lg:text-[90px] uppercase'>
             <h3 className=''>based in Spruce Grove & Leduc</h3>
