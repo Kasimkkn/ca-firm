@@ -1,21 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: 'primary_font';
+    src: url('../assets/fonts/Canela-Light.32d24c50.woff');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: 'secondary_font';
+    src: url('../assets/fonts/telegraf-regular-webfont.e16ff9b7.woff');
+}
+
+:root {
+    --primaryFont: "primary_font", sans-serif;
+    --secondaryFont: "secondary_font", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primaryFont);
+    background-color: #f7f3f0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.font-primaryFont {
+    font-family: var(--primaryFont);
+}
+
+.font-secondaryFont {
+    font-family: var(--secondaryFont);
 }
